@@ -1,0 +1,50 @@
+@import "../colors.scss";
+@import "../mixin.scss";
+
+footer {
+  border-top: 1px solid #e5ebf0;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @include wrapper(24px 0 12.3px, $white);
+
+  h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  section {
+    padding: 0 0 24px;
+  }
+
+  .description {
+    margin: 10.19px 0;
+  }
+
+  a,
+  i {
+    color: $blue;
+  }
+
+  i {
+    font-size: 16px;
+  }
+
+  .row {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

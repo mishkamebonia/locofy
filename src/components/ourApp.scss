@@ -1,0 +1,63 @@
+@import "../mixin.scss";
+@import "../colors.scss";
+
+.our-app {
+  @include wrapper(22px 0, $white);
+
+  h3 {
+    @include lg-headline($blue);
+    margin-bottom: 4px;
+  }
+
+  p {
+    @include md-paragraph($gray);
+    margin-bottom: 12px;
+  }
+
+  .about-image {
+    position: relative;
+    height: 310px;
+
+    img,
+    .cards {
+      position: absolute;
+    }
+
+    .screen-page {
+      left: 0;
+      top: 20px;
+    }
+    .screen {
+      left: 70px;
+      top: 0;
+    }
+    .cards {
+      right: 0;
+      top: 35px;
+    }
+  }
+
+  .card {
+    width: 83px;
+    height: 72px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 0.7px solid #f1f1f1;
+    background: var(--global-09-white, #fff);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.04);
+    margin-bottom: 16px;
+
+    h3 {
+      @include lg-headline($blue);
+    }
+
+    p {
+      color: $gray;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      margin-bottom: 0;
+      width: 35px;
+    }
+  }
+}

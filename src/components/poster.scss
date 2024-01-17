@@ -1,0 +1,64 @@
+@import "../mixin.scss";
+@import "../colors.scss";
+
+.poster {
+  @include wrapper(0, $blue);
+  position: relative;
+  height: 220px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+
+  img {
+    position: absolute;
+  }
+
+  .img1 {
+    right: 0;
+    top: 47px;
+  }
+
+  .img2 {
+    right: 0;
+    top: 117px;
+  }
+
+  .video-icon {
+    right: 75px;
+    top: 14px;
+  }
+
+  .medicine-icon {
+    right: 122px;
+    top: 77px;
+  }
+
+  .ambulance-icon {
+    right: 155px;
+    top: 180px;
+  }
+
+  .description {
+    width: 143px;
+
+    h2 {
+      @include lg-headline($white);
+      margin-bottom: 4.53px;
+    }
+
+    p {
+      @include sm-paragraph($white);
+      margin-bottom: 17.85px;
+    }
+
+    a {
+      color: $white;
+    }
+
+    button {
+      @include download-btn($blue-dark, $white);
+    }
+  }
+}
